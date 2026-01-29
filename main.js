@@ -1,4 +1,4 @@
-// main.js - النسخة المعدلة مع تحديثات الميلودراما
+// main.js - النسخة المعدلة مع تحديثات مسلسلات الجريمة
 console.log("✅ تم تحميل main.js بنجاح!");
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -134,20 +134,52 @@ document.addEventListener('DOMContentLoaded', function() {
         ],
         crime: [
             {
-                id: 8,
-                title: "ملف الجريمة",
-                year: "2022",
-                heroes: ["كم نام غيل", "لي سيونغ كي"],
-                story: "مسلسل investigational حيث يحقق فريق من المحققين الأذكياء في سلسلة جرائم غامضة ومتشابكة. كل حلقة تقدم لغزًا جديدًا مع روابط خفية تربط القضايا ببعضها.",
-                poster: "https://images.unsplash.com/photo-1551029506-0807df4e2031?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                id: 20,
+                title: "فأر",
+                year: "2021",
+                heroes: ["Lee-Seung-Gi : في دور Jung Ba Reum", "Lee-Hee-Joon : في دور Go Moo Chi", "Park-Joo-Hyun : في دور Oh Bong Yi", "Kyung-Soo-Jin : في دور Choi Hong Joo"],
+                story: "تدور أحداث الدراما حول جونج با روم، شرطي شجاع تتغير حياته حين يواجه قاتلاً متسلسلاً معتل نفسياً، هذا يقوده وشريكه جو مو تشي للكشف عن الحقيقة وراء التصرفات النفسية المعتلة وهذا يدفع للتساؤل عن إمكانية الكشف عن الاعتلال النفسي لدى الأجنة بالأرحام عبر الفحوص وإن وُجد أنه مريض نفسي، هل سيكون من الحكمة إنجابه؟",
+                poster: "https://aradramatv.cc/wp-content/uploads/Mouse-Poster3.jpg"
             },
             {
-                id: 9,
-                title: "شبكة الجريمة",
+                id: 21,
+                title: "الكميرا",
                 year: "2021",
-                heroes: ["جو جونغ سوك", "مون جا يونغ"],
-                story: "يتتبع المسلسل شبكة إجرامية معقدة تمتد عبر البلاد، حيث يحاول محقق عنيد كشف الحقيقة وراء هذه الشبكة والمسؤولين الكبار الذين يحمونها.",
-                poster: "https://images.unsplash.com/photo-1531259683007-016a7b628fc3?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                heroes: ["Park-Hae-Soo : في دور Cha Jae Hwan", "Lee-Hee-Joon : في دور Lee Joong Yup", "Claudia-Kim : في دور Eugene Hathaway", "Cha-Joo-Young : في دور Kim Hyo Kyung"],
+                story: "انفجار مدوي اعقبته جرائم قتل متسلسلة تُعرف بـ 'الخيمر' عام ١٩٨٢ ليعود فتيلها بالاشتعال من جديد عقب 35 عامًا… فيجتمع 3 أشخاص لكشف الغموض والتوصل للحقيقة ، محقق حماسيّ، محللة نفسية للمجرمين كانت عميلة سابقة في المباحث الفيدرالية، جرّاح تورط في قضية غامضة، فمثلما يُعرف مخلوق الخيمر في الأساطير الإغريقية بأن له رأس أسد وجسم شاة وذيل أفعى…. سيكون لتجمع ثلاثتهم تركيبة فريدة تزيح الغموض عن جرائم تمتد جذورها لعشرات السنين.",
+                poster: "https://aradramatv.cc/wp-content/uploads/Chimera-Poster1.jpg"
+            },
+            {
+                id: 22,
+                title: "أعمى",
+                year: "2022",
+                heroes: ["Ok-Taec-Yeon : في دور Ryu Sung Joon", "Ha-Seok-Jin : في دور Ryu Sung Hoon", "Jung-Eun-Ji : في دور Jo Eun Gi", "Jung-In-Ki : في دور Yeom Gi Nam"],
+                story: "يتورط كل من Ryu Sung Joon و Ryu Sung Hoon و Jo Eun Ki في قضية قتل متسلسلة تضم أعضاء هيئة المحلفين كضحايا. يحاول هؤلاء الثلاثة كشف الحقيقة وراء الوفيات.",
+                poster: "https://aradramatv.cc/wp-content/uploads/8B66B8D8-3706-4987-B3E0-F27E1049C2F7-scaled.jpeg"
+            },
+            {
+                id: 23,
+                title: "قارئ الذاكرة",
+                year: "2020",
+                heroes: ["Yoo-Seung-Ho : في دور Dong Baek", "Lee-Se-Young : في دور Han Sun Mi", "Jo-Sung-Ha : في دور Lee Shin Woong", "Go-Chang-Suk : في دور Koo Kyung Tan"],
+                story: "تتحدث دراما 'قارئ الذاكرة' عن 'دون بيك'، وهو محقق يمتلك قدرة خارقة وهي قراءة ذاكرة الناس عندما يلمسهم. يحاول الامساك بقاتل متسلسل غامض بالاستعانة بقدرته.",
+                poster: "https://aradramatv.cc/wp-content/uploads/Memorist-Poster1.jpg"
+            },
+            {
+                id: 24,
+                title: "التصويت القاتل",
+                year: "2023",
+                heroes: ["Park-Hae-Jin : في دور Kim Moo Chan", "Park-Sung-Woong : في دور Kwon Seok Joo", "Im-Ji-Yeon : في دور Joo Hyun", "Kim-Yoo-Mi : في دور Min Ji Young", "Shin-Jung-Keun : في دور Choi Jin Soo", "Kim-Kwon : في دور Lee Min Soo"],
+                story: "تتحدث دراما 'التصويت القاتل' عن مقنّع مجهول عبر الانترنت يلاحق عتاة المجرمين المتهربين من العقوبة، فيخترق القانون ليسنّ دستوره الخاص، يهشم المحاكم ليمدّ حرمها القدسي لربوع البلاد، يسلب السيدة معصوبة العينين ميزانها ليهب ميزان العدل في قبضة كل مواطن، وبضغطة زر واحدة يحكم المواطنون بأصواتهم، إما برفض أو بتأييد إعدامه… مما يستدعي اتحاد محقق وسجين ومحققة سيبرانية لمطاردة المقنٌع بشراسة، فلأي طرف سترجح كفة الانتصار؟",
+                poster: "https://aradramatv.cc/wp-content/uploads/2023/08/d0zgYK_4f.jpg"
+            },
+            {
+                id: 25,
+                title: "تسع ألغاز",
+                year: "2025",
+                heroes: ["Kim-Da-Mi : في دور Yun I Na", "Son-Suk-Ku : في دور Kim Han Saem"],
+                story: "منذ عشر سنوات، شهدت 'آي نا' مقتل عمّها العزيز، الذي كان لها الأب والأم والصديق. لكنها، بدلاً من أن تُعامَل كضحية، وُضعت تحت الشبهة، والمحقق 'هان سايم' كان مقتنعًا بأنها القاتلة. مرت السنوات، وأصبحت 'آي نا' محللة جنائية بارعة في شرطة سيول، معروفة بقدرتها على كشف دوافع القتلة من أول نظرة على مسرح الجريمة.. ذات يوم يعيد القدر جمعها بـ المحقق 'هان سايم' في قضية جديدة. وبين التوتر والشكوك القديمة، يبدأان معًا في كشف الحقيقة الغامضة وراء جريمة مقتل عمّها.",
+                poster: "https://aradramatv.cc/wp-content/uploads/2025/05/73EN0L_4f.jpg"
             }
         ]
     };
