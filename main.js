@@ -35,16 +35,24 @@ document.addEventListener('DOMContentLoaded', function() {
             },
             {
                 id: 4,
-                title: "قانون القصر",
-                year: "2022",
-                heroes: ["لي جون هو", "بارك إيون بين"],
-                story: "يتناول المسلسل قضايا قانونية معقدة حيث يدافع محام شاب عن المظلومين ويكشف الفساد داخل النظام القضائي. يعرض التحديات الأخلاقية والمهنية التي يواجهها المحامون في سعيهم لتحقيق العدالة.",
-                poster: "https://images.unsplash.com/photo-1589391886085-8b6b0ac72a1a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
-            }
+                title: "القاضي الشيطان",
+                year: "2021",
+                heroes: ["Kim-Min-Jung : في دور Jung Sun-A", "Ji-Sung : في دور Kang Yo-Han"],
+                story: "يعمل كانج يو هان رئيس قضاة ويعاقب المخادعين في قاعة المحكمة بلا رحمة محولاً إياها إلى برنامج واقعي وبالتالي اكتسب لقب قاضي الشيطان ومع ذلك إن هالته الغامضة تخفي هويته الحقيقية وطموحاته."
+                poster: "https://aradramatv.cc/wp-content/uploads/The-Devil-Judge-Poster1.jpg"
+            },
+            {
+                id: 5,
+                title: "المُدعى عليه",
+                year: "2017",
+                heroes: ["Ji-Sung : في دور Park Jung Woo", "Uhm-Ki-Joon : في دور Cha Min Ho"],
+                story: "تتحدث دراما المُدعى عليه عن بارك جونج وو، مدعي عام في مكتب الإدعاء العام في مقاطعة سيئول. يستيقظ يوماً ماً مداناً بسلسلة جرائم ويعاني من فقدان الذاكرة، لا يملك جونج وو أدنى فكرة عما زجه في السجن ويعاني لاستعادة ذاكرته وتبرئة اسمه. الدراما أخذت جائزة دراما العام سنة 2017 في حفل جوائز شبكة SBS وكذلك جائزة الكبرى لأحسن دراما في حفل جوائز سيوول Seoul Awards."
+                poster: "https://aradramatv.cc/wp-content/uploads/2019/02/Defendant-Poster-2-e1550877499450.jpg"
+            }     
         ],
         melodrama: [
             {
-                id: 5,
+                id: 6,
                 title: "حكاية حب",
                 year: "2020",
                 heroes: ["سونغ كانغ", "كم جو أون"],
@@ -52,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 poster: "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
             },
             {
-                id: 6,
+                id: 7,
                 title: "قلوب متحطمة",
                 year: "2019",
                 heroes: ["بارك سو دام", "جانغ كي يونغ"],
@@ -62,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
         ],
         crime: [
             {
-                id: 7,
+                id: 8,
                 title: "ملف الجريمة",
                 year: "2022",
                 heroes: ["كم نام غيل", "لي سيونغ كي"],
@@ -70,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 poster: "https://images.unsplash.com/photo-1551029506-0807df4e2031?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
             },
             {
-                id: 8,
+                id: 9,
                 title: "شبكة الجريمة",
                 year: "2021",
                 heroes: ["جو جونغ سوك", "مون جا يونغ"],
@@ -354,5 +362,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize the application
     init();
 });
+
 
 
