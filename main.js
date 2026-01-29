@@ -1,5 +1,8 @@
-// main.js - النسخة المعدلة لتعمل على GitHub Pages
+// main.js - النسخة المؤكدة للعمل على GitHub Pages
+console.log("تم تحميل main.js بنجاح!"); // رسالة تأكيد
+
 document.addEventListener('DOMContentLoaded', function() {
+    console.log("تم تحميل DOM بالكامل!");
     
     // Drama Data
     const dramaData = {
@@ -77,16 +80,6 @@ document.addEventListener('DOMContentLoaded', function() {
         ]
     };
 
-    // DOM Elements
-    const typeButtons = document.querySelectorAll('.type-btn');
-    const dramasContainer = document.getElementById('dramas-container');
-    const dramaTypeTitle = document.getElementById('drama-type-title');
-    const backToTypesBtn = document.querySelector('.back-to-types');
-    const modal = document.getElementById('drama-modal');
-    const closeModalBtn = document.querySelector('.close-modal');
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navLinks = document.querySelector('.nav-links');
-    
     // Type Names in Arabic
     const typeNames = {
         'action': 'أكشن',
@@ -95,29 +88,49 @@ document.addEventListener('DOMContentLoaded', function() {
         'crime': 'مسلسلات الجريمة'
     };
 
-    // Initialize
+    // Get DOM elements
+    const typeButtons = document.querySelectorAll('.type-btn');
+    const dramasContainer = document.getElementById('dramas-container');
+    const dramaTypeTitle = document.getElementById('drama-type-title');
+    const backToTypesBtn = document.querySelector('.back-to-types');
+    const modal = document.getElementById('drama-modal');
+    const closeModalBtn = document.querySelector('.close-modal');
+    
+    console.log("عدد أزرار الأنواع:", typeButtons.length);
+
+    // Initialize when DOM is ready
     function init() {
+        console.log("تهيئة التطبيق...");
         setupEventListeners();
+        resetDramaDisplay();
     }
 
-    // Setup Event Listeners
+    // Setup all event listeners
     function setupEventListeners() {
+        console.log("إعداد مستمعي الأحداث...");
+        
         // Type buttons
         typeButtons.forEach(button => {
             button.addEventListener('click', function() {
+                console.log("تم النقر على نوع دراما");
                 const typeCard = this.closest('.type-card');
                 const type = typeCard.getAttribute('data-type');
+                console.log("النوع المحدد:", type);
                 displayDramas(type);
             });
         });
 
         // Back to types button
-        backToTypesBtn.addEventListener('click', function() {
-            resetDramaDisplay();
-        });
+        if (backToTypesBtn) {
+            backToTypesBtn.addEventListener('click', function() {
+                resetDramaDisplay();
+            });
+        }
 
         // Close modal
-        closeModalBtn.addEventListener('click', closeModal);
+        if (closeModalBtn) {
+            closeModalBtn.addEventListener('click', closeModal);
+        }
 
         // Close modal when clicking outside
         window.addEventListener('click', function(event) {
@@ -127,18 +140,16 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         // Mobile menu toggle
-        menuToggle.addEventListener('click', function() {
-            navLinks.classList.toggle('active');
-        });
-
-        // Close mobile menu when clicking a link
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', function() {
-                navLinks.classList.remove('active');
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        
+        if (menuToggle && navLinks) {
+            menuToggle.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
             });
-        });
+        }
 
-        // Contact form submission
+        // Contact form
         const contactForm = document.getElementById('contact-form');
         if (contactForm) {
             contactForm.addEventListener('submit', function(e) {
@@ -148,7 +159,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
 
-        // Newsletter form submission
+        // Newsletter form
         const newsletterForm = document.getElementById('newsletter-form');
         if (newsletterForm) {
             newsletterForm.addEventListener('submit', function(e) {
@@ -160,14 +171,24 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Display dramas by type
+    // Display dramas of selected type
     function displayDramas(type) {
+        console.log("عرض مسلسلات نوع:", type);
+        
         const dramas = dramaData[type];
         
-        if (!dramas) return;
+        if (!dramas) {
+            console.error("لا توجد بيانات لهذا النوع:", type);
+            return;
+        }
         
         // Update title
         dramaTypeTitle.textContent = `مسلسلات ${typeNames[type]}`;
+        
+        // Show back button
+        if (backToTypesBtn) {
+            backToTypesBtn.style.display = 'flex';
+        }
         
         // Create dramas grid
         let dramasHTML = `<div class="dramas-grid">`;
@@ -176,7 +197,7 @@ document.addEventListener('DOMContentLoaded', function() {
             dramasHTML += `
                 <div class="drama-card">
                     <div class="drama-poster">
-                        <img src="${drama.poster}" alt="${drama.title}">
+                        <img src="${drama.poster}" alt="${drama.title}" loading="lazy">
                     </div>
                     <div class="drama-info">
                         <h3>${drama.title}</h3>
@@ -205,10 +226,12 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
         
-        // Scroll to dramas section
-        document.querySelector('.drama-details-section').scrollIntoView({ 
-            behavior: 'smooth' 
-        });
+        // Scroll to dramas section smoothly
+        setTimeout(() => {
+            document.querySelector('.drama-details-section').scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+        }, 100);
     }
 
     // Find drama by ID
@@ -220,9 +243,14 @@ document.addEventListener('DOMContentLoaded', function() {
         return null;
     }
 
-    // Reset drama display
+    // Reset to initial state
     function resetDramaDisplay() {
         dramaTypeTitle.textContent = 'اختر نوعًا من الأعلى لعرض المسلسلات';
+        
+        if (backToTypesBtn) {
+            backToTypesBtn.style.display = 'none';
+        }
+        
         dramasContainer.innerHTML = `
             <div class="placeholder-message">
                 <i class="fas fa-film"></i>
@@ -288,8 +316,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Close modal
     function closeModal() {
-        modal.style.display = 'none';
-        document.body.style.overflow = 'auto';
+        if (modal) {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
     }
 
     // Initialize the application
