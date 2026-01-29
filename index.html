@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الدراما الكورية - موقع عربي عن أفضل المسلسلات الكورية</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Almarai:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <h1><i class="fas fa-tv"></i> عالم الدراما الكورية</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#types">أنواع الدراما</a></li>
+                    <li><a href="#contact">اتصل بنا</a></li>
+                    <li><a href="#about">من نحن</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h2>استكشف عالم المسلسلات الكورية المميزة</h2>
+                <p>موقع عربي متخصص في تقديم أفضل المسلسلات الكورية مصنفة حسب الأنواع مع معلومات مفصلة عن القصة والممثلين</p>
+                <a href="#types" class="btn">اكتشف الأنواع</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Drama Types Section -->
+    <section class="types-section" id="types">
+        <div class="container">
+            <h2 class="section-title">أنواع الدراما الكورية</h2>
+            <p class="section-subtitle">اختر نوعًا لاستكشاف أفضل المسلسلات الكورية في هذا المجال</p>
+            
+            <div class="types-grid">
+                <!-- Action Drama -->
+                <div class="type-card" data-type="action">
+                    <div class="type-icon">
+                        <i class="fas fa-fist-raised"></i>
+                    </div>
+                    <h3>أكشن</h3>
+                    <p>مسلسلات مليئة بالمشاهد الحركية والإثارة والتشويق</p>
+                    <button class="type-btn">عرض المسلسلات</button>
+                </div>
+                
+                <!-- Politics & Law Drama -->
+                <div class="type-card" data-type="politics">
+                    <div class="type-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>سياسة وقانون</h3>
+                    <p>مسلسلات تعالج القضايا السياسية والقانونية في المجتمع الكوري</p>
+                    <button class="type-btn">عرض المسلسلات</button>
+                </div>
+                
+                <!-- Melodrama -->
+                <div class="type-card" data-type="melodrama">
+                    <div class="type-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>ميلودراما</h3>
+                    <p>مسلسلات عاطفية تلامس المشاعر وتتناول العلاقات الإنسانية</p>
+                    <button class="type-btn">عرض المسلسلات</button>
+                </div>
+                
+                <!-- Crime Series -->
+                <div class="type-card" data-type="crime">
+                    <div class="type-icon">
+                        <i class="fas fa-user-secret"></i>
+                    </div>
+                    <h3>مسلسلات الجريمة</h3>
+                    <p>مسلسلات تحقق في الجرائم وتكشف أسرار المجرمين</p>
+                    <button class="type-btn">عرض المسلسلات</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Drama Details Section -->
+    <section class="drama-details-section">
+        <div class="container">
+            <div class="drama-header">
+                <h2 class="drama-type-title" id="drama-type-title">اختر نوعًا من الأعلى لعرض المسلسلات</h2>
+                <button class="back-to-types"><i class="fas fa-arrow-right"></i> العودة للأنواع</button>
+            </div>
+            
+            <div class="dramas-container" id="dramas-container">
+                <div class="placeholder-message">
+                    <i class="fas fa-film"></i>
+                    <p>يرجى اختيار نوع دراما من الأعلى لعرض المسلسلات المميزة</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & About Section -->
+    <section class="contact-about-section" id="contact">
+        <div class="container">
+            <div class="contact-about-grid">
+                <!-- Contact Form -->
+                <div class="contact-box">
+                    <h2><i class="fas fa-envelope"></i> اتصل بنا</h2>
+                    <p>شاركنا آرائك أو اقتراحاتك حول المسلسلات الكورية</p>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="الاسم الكامل" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="البريد الإلكتروني" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="رسالتك" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">إرسال الرسالة</button>
+                    </form>
+                    <div class="contact-email">
+                        <p><i class="fas fa-at"></i> البريد الإلكتروني: <span>korean.drama@example.com</span></p>
+                    </div>
+                </div>
+                
+                <!-- About/Biography -->
+                <div class="about-box" id="about">
+                    <h2><i class="fas fa-user"></i> من نحن</h2>
+                    <div class="about-content">
+                        <div class="about-img">
+                            <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="صورة المؤسس">
+                        </div>
+                        <div class="about-text">
+                            <h3>أحمد الكوري</h3>
+                            <p>مؤسس موقع عالم الدراما الكورية، عاشق للثقافة الكورية والمحتوى الدرامي منذ أكثر من 10 سنوات. هدفي هو تقديم أفضل المسلسلات الكورية للجمهور العربي ونشر ثقافة مشاهدة الدراما الكورية الهادفة.</p>
+                            <p>بدأت رحلتي مع الدراما الكورية عام 2012 مع مسلسل "الحب الكبير" ومنذ ذلك الحين شاهدت أكثر من 300 مسلسل كوري متنوع في الأنواع. أسست هذا الموقع لتقديم تجربتي وخبرتي لمحبي الدراما الكورية في العالم العربي.</p>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3><i class="fas fa-tv"></i> عالم الدراما الكورية</h3>
+                    <p>أول موقع عربي متخصص في تصنيف وتقييم المسلسلات الكورية</p>
+                </div>
+                <div class="footer-links">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#types">أنواع الدراما</a></li>
+                        <li><a href="#contact">اتصل بنا</a></li>
+                        <li><a href="#about">من نحن</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>النشرة البريدية</h4>
+                    <p>اشترك ليصلك كل جديد عن المسلسلات الكورية</p>
+                    <form id="newsletter-form">
+                        <input type="email" placeholder="بريدك الإلكتروني" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2023 عالم الدراما الكورية. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Drama Modal -->
+    <div class="modal" id="drama-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body" id="modal-body">
+                <!-- Drama details will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
